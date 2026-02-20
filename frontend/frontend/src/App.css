@@ -1,0 +1,159 @@
+/* ===== Global ===== */
+* {
+  box-sizing: border-box;
+  font-family: "Amazon Ember", "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: #0f171e;
+  color: white;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+  height: 60px;
+  background-color: #1a242f;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.6);
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: #00a8e1;
+}
+
+/* ===== App Container ===== */
+.app {
+  max-width: 520px;
+  margin: 40px auto;
+  padding: 25px;
+  background-color: #1a242f;
+  border-radius: 10px;
+}
+
+/* ===== Fade In ===== */
+.fade-in {
+  animation: fade 0.6s ease-in;
+}
+
+@keyframes fade {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ===== Heading ===== */
+h2 {
+  text-align: center;
+  color: #00a8e1;
+}
+
+/* ===== Form ===== */
+.form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.form input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #2f3e4e;
+  background: #0f171e;
+  color: white;
+}
+
+.form button {
+  background: #00a8e1;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* ===== List ===== */
+.list {
+  list-style: none;
+  padding: 0;
+}
+
+/* ===== Card ===== */
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0f171e;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  border: 1px solid #2f3e4e;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 14px rgba(0,0,0,0.6);
+}
+
+.card a {
+  color: white;
+  text-decoration: none;
+  max-width: 260px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* ===== Buttons ===== */
+.card button {
+  margin-left: 6px;
+  padding: 6px 10px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+.card button:first-child {
+  background: #2f3e4e;
+  color: white;
+}
+
+.card button:last-child {
+  background: #b12704;
+  color: white;
+}
+
+/* ===== Skeleton Loader ===== */
+.skeleton-list .skeleton {
+  height: 45px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  background: linear-gradient(
+    90deg,
+    #1a242f 25%,
+    #2f3e4e 37%,
+    #1a242f 63%
+  );
+  background-size: 400% 100%;
+  animation: shimmer 1.2s infinite;
+}
+
+@keyframes shimmer {
+  0% { background-position: 100% 0; }
+  100% { background-position: -100% 0; }
+}
+
+/* ===== Mobile ===== */
+@media (max-width: 600px) {
+  .app {
+    margin: 20px;
+  }
+  .form {
+    flex-direction: column;
+  }
+}
