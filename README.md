@@ -68,7 +68,6 @@ bookmark-manager/
 
 ## ⚙️ Backend Setup (Django)
 
-```bash
 cd backend
 pip install django djangorestframework django-cors-headers
 python manage.py makemigrations
