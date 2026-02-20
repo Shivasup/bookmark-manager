@@ -114,4 +114,10 @@ http://127.0.0.1:8000/api/bookmarks/
 and the frontend is built using React functional components. The frontend communicates with the backend through REST APIs
 to perform all CRUD operations.
 
+Frontend
+<img width="1794" height="926" alt="Screenshot 2026-02-20 112944" src="https://github.com/user-attachments/assets/6d0a1bb2-be93-4a78-9a8f-b02154b7a0fc" />
+
+Backend
+<img width="1822" height="1013" alt="Screenshot 2026-02-20 114145" src="https://github.com/user-attachments/assets/79c0fbe5-2aae-40e8-96d2-304f6c63e67e" />
+
 
