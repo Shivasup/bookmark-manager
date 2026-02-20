@@ -9,8 +9,8 @@ The application allows users to **add, view, update, and delete bookmarks** thro
 
 ## 🚀 Live Application
 
-- **Frontend**: https://your-frontend-url.netlify.app  
-- **Backend API**: https://your-backend-url.onrender.com/api/bookmarks/
+- **Frontend**: http://localhost:5173/ 
+- **Backend API**: http://127.0.0.1:8000/api/bookmarks/
 
 ---
 
